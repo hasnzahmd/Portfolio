@@ -179,12 +179,18 @@ header img {
   color: #396df2;
 }
 
+.about-wrapper {
+  background-color: #f2f2f9bc;
+}
+
 .about-section {
   display: inline-flex;
   padding: 114px 24px;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  border-top-right-radius: 120px;
+  background-color: white;
 }
 
 .myself-section {
