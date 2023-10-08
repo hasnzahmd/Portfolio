@@ -167,7 +167,8 @@ header img {
 }
 
 .see-project-btn,
-.resume-btn, .form-btn {
+.resume-btn,
+.form-btn {
   height: 48px;
   vertical-align: middle;
   line-height: 48px;
@@ -183,7 +184,7 @@ header img {
 
 .about-section {
   display: inline-flex;
-  padding: 114px 0px;
+  padding: 114px 0;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -289,16 +290,16 @@ header img {
   background: #dfe1e6;
 }
 
-.contact-wrapper{
+.contact-wrapper {
   background-color: white;
   padding-top: 3.5rem;
 }
 
-.contact-section{
+.contact-section {
   background-image: url(./imgs/contact-bg.svg);
   background-repeat: no-repeat;
-  background-position:100%;
-  background-color: #6070FF;
+  background-position: 100%;
+  background-color: #6070ff;
   height: 779px;
   border-top-left-radius: 4.5rem;
   display: flex;
@@ -307,17 +308,17 @@ header img {
   justify-content: center;
 }
 
-.contact-section h1{
+.contact-section h1 {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
-  margin-top: 5rem; 
+  margin-top: 5rem;
 }
 
-.contact-section p{
+.contact-section p {
   width: 327px;
   height: 137px;
-  color:#EBEBFF;
+  color: #ebebff;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
@@ -325,41 +326,41 @@ header img {
   margin-top: 0.6rem;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 3rem;
 }
 
-form input{
+form input {
   width: 297px;
   height: 48px;
-  padding: 0px 15px;
+  padding: 0 15px;
   border-radius: 8px;
-  border: 1px solid #CFD8DC;
-  color: #172B4D;
+  border: 1px solid #cfd8dc;
+  color: #172b4d;
   font-size: 17px;
   font-weight: 400;
-
 }
 
-input::placeholder , textarea::placeholder{
-  color: #B3BAC5;
+input::placeholder,
+textarea::placeholder {
+  color: #b3bac5;
   font-weight: 300;
 }
 
-form textarea{
+form textarea {
   width: 297px;
   height: 140px;
   padding: 15px;
   font-size: 15px;
-  color: #172B4D;
+  color: #172b4d;
   border-radius: 8px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
 }
 
-.form-btn{
+.form-btn {
   margin: 0;
   align-self: flex-start;
 }
