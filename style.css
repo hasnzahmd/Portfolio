@@ -6,6 +6,7 @@
 
 .bg-wrapper {
   background-color: #f2f2f9bc;
+  width: 100vw;
 }
 
 header {
@@ -124,7 +125,7 @@ header .items-wrap {
   line-height: 1rem;
 }
 
-.dark {
+.canopy .dark {
   color: #344563;
 }
 
@@ -359,6 +360,10 @@ form textarea {
   align-self: flex-start;
 }
 
+.desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     height: 72px;
@@ -394,7 +399,7 @@ form textarea {
   }
 
   .headline-section {
-    background-image: url(.//imgs/Header\ bg.svg);
+    background-image: url(.//imgs/desktop/Header\ bg.svg);
     height: 80vh;
     justify-content: center;
     background-size: 100% 100%;
@@ -418,4 +423,72 @@ form textarea {
   .connect-btn {
     margin-top: 0.8rem;
   }
+
+  .works-section {
+    padding: 7rem 0;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 7rem;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
+
+  .desktop.opposite {
+    order: 1;
+  }
+
+  .project-details {
+    padding-top: 2rem;
+    height: 100%;
+  }
+
+  .primary-details {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .primary-details h1 {
+    font-size: 40px;
+    color: #091E42;
+  }
+
+  .canopy {
+    margin: 0.7rem 0 1.5rem 0;
+  }
+
+  .canopy p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .canopy .dark {
+    font-weight: 700;
+  }
+  .project-description {
+    font-size: 16px;
+    width: 33rem;
+    padding-right: 25%;
+    height: auto;
+  }
+
+ .languages {
+  margin: 0.5rem 0;
+ }
+
+ .languages li span {
+  font-size: 15px;
+ }
+
+
 }
