@@ -4,8 +4,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  color: #172b4d;
+}
+
 .bg-wrapper {
   background-color: #f2f2f9bc;
+  width: 100vw;
 }
 
 header {
@@ -124,7 +129,7 @@ header .items-wrap {
   line-height: 1rem;
 }
 
-.dark {
+.canopy .dark {
   color: #344563;
 }
 
@@ -176,10 +181,15 @@ header .items-wrap {
   cursor: pointer;
 }
 
+.about-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .about-section {
   display: inline-flex;
   padding: 114px 0;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 24px;
@@ -192,6 +202,7 @@ header .items-wrap {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+  width: 327px;
 }
 
 .social-media {
@@ -201,12 +212,8 @@ header .items-wrap {
   gap: 1rem;
 }
 
-.social-media > div {
-  margin-left: 0;
-}
-
 .social-media .social-icons {
-  margin-left: 10px;
+  margin: 6px 0 0 10px;
 }
 
 .skills-section {
@@ -221,8 +228,12 @@ header .items-wrap {
   align-items: flex-start;
 }
 
+.lang-section > div {
+  align-self: center;
+}
+
 .lang-section img {
-  margin-left: 50px;
+  margin-left: 3rem;
 }
 
 .lang-section .lang-list {
@@ -235,8 +246,8 @@ header .items-wrap {
 
 .lang-list li {
   display: flex;
-  width: 303px;
-  padding: 9px 12px 9.71rem 12px;
+  width: 90%;
+  padding: 10px 0;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -359,6 +370,10 @@ form textarea {
   align-self: flex-start;
 }
 
+.desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     height: 72px;
@@ -394,7 +409,7 @@ form textarea {
   }
 
   .headline-section {
-    background-image: url(.//imgs/Header\ bg.svg);
+    background-image: url(.//imgs/desktop/Header\ bg.svg);
     height: 80vh;
     justify-content: center;
     background-size: 100% 100%;
@@ -417,5 +432,73 @@ form textarea {
 
   .connect-btn {
     margin-top: 0.8rem;
+  }
+
+  .works-section {
+    padding: 7rem 0;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 7rem;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
+
+  .desktop.opposite {
+    order: 1;
+  }
+
+  .project-details {
+    padding-top: 2rem;
+    height: 100%;
+  }
+
+  .primary-details {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .primary-details h1 {
+    font-size: 40px;
+    color: #091e42;
+  }
+
+  .canopy {
+    margin: 0.7rem 0 1.5rem 0;
+  }
+
+  .canopy p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .canopy .dark {
+    font-weight: 700;
+  }
+
+  .project-description {
+    font-size: 16px;
+    width: 33rem;
+    padding-right: 25%;
+    height: auto;
+  }
+
+  .languages {
+    margin: 0.5rem 0;
+  }
+
+  .languages li span {
+    font-size: 15px;
   }
 }
