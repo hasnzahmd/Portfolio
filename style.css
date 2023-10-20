@@ -377,7 +377,7 @@ form textarea {
 @media only screen and (min-width: 768px) {
   header {
     height: 72px;
-    padding: 0 7.5rem;
+    padding: 0 10rem;
   }
 
   header .logo {
@@ -562,5 +562,31 @@ form textarea {
 
   .separator {
     width: 105%;
+  }
+
+  .contact-section {
+    height: 115vh;
+    border-top-left-radius: 7rem;
+    background-image: url(./imgs/desktop/contact-bg.svg);
+    background-position: 50% 80%;
+  }
+
+  .contact-section p {
+    width: 35%;
+  }
+
+  form {
+    margin: 0;
+    width: 30%;
+  }
+
+  form input,
+  form textarea {
+    border-radius: 0;
+    width: 93%;
+  }
+
+  .form-btn {
+    align-self: center;
   }
 }
