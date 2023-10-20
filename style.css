@@ -501,4 +501,66 @@ form textarea {
   .languages li span {
     font-size: 15px;
   }
+
+  .about-section {
+    width: 100%;
+    flex-direction: row;
+    gap: 4rem;
+    height: 90vh;
+    padding: 0 10rem;
+    border-top-right-radius: 10rem;
+  }
+
+  .myself-section {
+    width: 36%;
+  }
+
+  .myself-section .text-content {
+    width: auto;
+  }
+
+  .skills-section {
+    width: 55%;
+    align-items: flex-start;
+  }
+
+  .lang-section {
+    width: 100%;
+  }
+
+  .frame,
+  .lang-section > div {
+    width: 100%;
+  }
+
+  .frame p,
+  .lang-section p {
+    width: 100%;
+  }
+
+  .lang-section .lang-list {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .lang-list li {
+    flex-direction: column;
+    height: 7.5rem;
+    width: 7.625rem;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+  }
+
+  .lang-list img {
+    margin: 0;
+  }
+
+  .lang-list p {
+    width: auto;
+    height: auto;
+  }
+
+  .separator {
+    width: 105%;
+  }
 }
