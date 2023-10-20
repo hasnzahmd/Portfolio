@@ -4,6 +4,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  color: #172b4d;
+}
+
 .bg-wrapper {
   background-color: #f2f2f9bc;
   width: 100vw;
@@ -177,10 +181,15 @@ header .items-wrap {
   cursor: pointer;
 }
 
+.about-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .about-section {
   display: inline-flex;
   padding: 114px 0;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 24px;
@@ -193,6 +202,7 @@ header .items-wrap {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+  width: 327px;
 }
 
 .social-media {
@@ -202,12 +212,8 @@ header .items-wrap {
   gap: 1rem;
 }
 
-.social-media > div {
-  margin-left: 0;
-}
-
 .social-media .social-icons {
-  margin-left: 10px;
+  margin: 6px 0 0 10px;
 }
 
 .skills-section {
@@ -222,8 +228,12 @@ header .items-wrap {
   align-items: flex-start;
 }
 
+.lang-section > div {
+  align-self: center;
+}
+
 .lang-section img {
-  margin-left: 50px;
+  margin-left: 3rem;
 }
 
 .lang-section .lang-list {
@@ -236,8 +246,8 @@ header .items-wrap {
 
 .lang-list li {
   display: flex;
-  width: 303px;
-  padding: 9px 12px 9.71rem 12px;
+  width: 90%;
+  padding: 10px 0;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -461,7 +471,7 @@ form textarea {
 
   .primary-details h1 {
     font-size: 40px;
-    color: #091E42;
+    color: #091e42;
   }
 
   .canopy {
@@ -472,9 +482,11 @@ form textarea {
     font-size: 18px;
     font-weight: 500;
   }
+
   .canopy .dark {
     font-weight: 700;
   }
+
   .project-description {
     font-size: 16px;
     width: 33rem;
@@ -482,13 +494,11 @@ form textarea {
     height: auto;
   }
 
- .languages {
-  margin: 0.5rem 0;
- }
+  .languages {
+    margin: 0.5rem 0;
+  }
 
- .languages li span {
-  font-size: 15px;
- }
-
-
+  .languages li span {
+    font-size: 15px;
+  }
 }
